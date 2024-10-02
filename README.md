@@ -26,7 +26,7 @@ Este aplicativo web oferece funcionalidades de cadastro e login para os usuário
    - Antes de executar o site, é necessário importar o arquivo `DATABASE.sql`. 
 
 2. **Configuração do PHP:**
-   - Abra o arquivo `CODIGO.php` e ajuste as configurações do banco de dados:
+   - Abra o arquivo `./CODIGO/CODIGO.php` e ajuste as configurações do banco de dados:
 
      ```php
      $servidor = "localhost";
@@ -35,21 +35,28 @@ Este aplicativo web oferece funcionalidades de cadastro e login para os usuário
      $database = "registro";
      ```
 
-3. **Executando o Aplicativo:**
+3. **Executando o Aplicativo com Apache:**
    - Coloque os arquivos em um servidor web compatível com PHP (por exemplo, XAMPP, WAMP, LAMP).
-   - Acesse o formulário no navegador visitando `http://localhost/CODIGO/index.html`.
+   - Acesse o formulário no navegador visitando [http://localhost/CODIGO/index.html](http://localhost/CODIGO/index.html).
 
-4. **Cadastro:**
+4. **Executando o Aplicativo com `php.exe`:**
+   - Alternativamente, você pode iniciar o servidor diretamente no diretório `./CODIGO` com o comando abaixo:
+   ```bash
+   php -S localhost:8080
+   ```
+   - Em seguida, acesse o formulário no navegador através do endereço: [http://localhost:8080/index.html](http://localhost:8080/index.html).
+
+5. **Cadastro:**
    - Preencha o campo "SEU EMAIL" com seu endereço de e-mail.
    - Digite uma senha no campo "SUA SENHA".
    - Clique no botão "CADASTRAR" para criar sua conta.
 
-5. **Login:**
+6. **Login:**
    - Insira o e-mail cadastrado no campo "SEU EMAIL".
    - Digite a senha associada à sua conta no campo "SUA SENHA".
    - Clique no botão "LOGIN" para acessar sua conta.
 
-6. **Mudando o Tema:**
+7. **Mudando o Tema:**
    - Clicando no ícone, o modo muda e a classe "dark" é adicionada/removida do formulário para alterar o estilo.
 
 ## NÃO SABE?
